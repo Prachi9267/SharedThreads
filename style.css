@@ -105,7 +105,7 @@ header {
 
     width: 100%;
 
-    height: 90vh;
+    height: 87vh;
 
     overflow: hidden;
 
@@ -113,12 +113,13 @@ header {
 
 .hero img {
     position: absolute;
-    width: 110%;
-    height: 110%;
+    width: 120%;
+    height: 120%;
     top: -5%;
     left: -5%;
     object-fit: fill;
-    animation: movePhoto 8s linear infinite;
+    animation: movePhoto 4s linear infinite;
+    opacity: 0.85;
 }
 
 @keyframes movePhoto {
@@ -141,6 +142,8 @@ header {
     padding: 80px 8% 100px;
 
     text-align: center;
+
+    background: #fff1f5;
 
 }
 
@@ -268,7 +271,7 @@ header {
 
     justify-content: center;
 
-    gap: 60px;
+    gap: 10px;
 
     background: #ffffff;
 
@@ -280,7 +283,7 @@ header {
 
     flex: 1;
 
-    min-width: 300px;
+    min-width: 200px;
 
 }
 
@@ -298,7 +301,7 @@ header {
 
     flex: 1;
 
-    min-width: 300px;
+    min-width: 500px;
 
 }
 
@@ -308,19 +311,19 @@ header {
 
     font-size: 42px;
 
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 
 }
 
 .story-content p {
 
-    line-height: 1.9;
+    line-height: 1.7;
 
     font-size: 17px;
 
     color: #666;
 
-    margin-bottom: 30px;
+    margin-bottom: 8px;
 
 }
 
@@ -352,6 +355,133 @@ header {
 
 }
 
+.more-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.more-content p {
+    margin-top: 0;
+}
+
+.more-content.show {
+    max-height: 500px;
+}
+
+/* ===========================
+        KNOW OUR FOUNDERS
+=========================== */
+
+.founders {
+    padding: 90px 8%;
+    background: linear-gradient(to bottom,
+            #ffffff,
+            #fff1f5);
+    text-align: center;
+}
+
+.founders h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin-bottom: 50px;
+    color: #FFC1CC;
+}
+
+.founders-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.founder-card {
+    background: #FFFFFF;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.4s ease;
+}
+
+.founder-card:hover {
+    transform: translateY(-10px);
+}
+
+.founder-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.founder-info {
+
+    padding: 20px;
+
+}
+
+
+.founder-info h3 {
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 24px;
+
+    color: #FFC1CC;
+
+    margin-bottom: 10px;
+
+}
+
+
+.founder-info p {
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:1100px) {
+
+    .founders-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media(max-width:600px) {
+
+    .founders-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+/* Responsive */
+
+@media(max-width: 1000px) {
+    .founders-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    .founders-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ===========================
         REVIEWS
 =========================== */
@@ -362,7 +492,7 @@ header {
 
     text-align: center;
 
-    background: #FFF2F4;
+    background: #ffffff;
 
 }
 
@@ -514,27 +644,90 @@ header {
 footer {
 
     background: #FFC1CC;
-
-    text-align: center;
-
-    padding: 20px 10px;
+    padding: 40px 8%;
 
 }
 
-footer h2 {
+.footer-container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+}
+
+.footer-menu {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+.footer-menu a {
+
+    text-decoration: none;
+
+    color: #FFF2F4;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+
+    font-weight: 400;
+
+}
+
+.footer-menu a:hover {
+
+    color: white;
+
+}
+
+.footer-brand {
+
+    text-align: right;
+
+}
+
+
+.footer-brand h2 {
 
     font-family: 'Playfair Display', serif;
 
     margin-bottom: 5px;
 
-    font-size: 16px;
+    font-size: 36px;
+
+    color: #FFF2F4;
 
 }
 
+footer h2:hover {
+    color: white;
+}
+
 footer p {
+    font-family: 'Playfair Display', serif;
 
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 
+    font-size: 16px;
+
+    color: #FFF2F4;
+
+    font-style: italic;
+
+}
+
+footer p:hover {
+    color: white;
 }
 
 .social-icons {
@@ -547,27 +740,17 @@ footer p {
 
     text-decoration: none;
 
-    color: #5A4A4A;
+    color: #FFF2F4;
 
     font-size: 20px;
 
-    margin: 0 10px;
+    margin-left: 15px;
 
     transition: .3s;
 
 }
 
 .social-icons a:hover {
-
-    color: white;
-
-}
-
-.copyright {
-
-    margin-top: 10px;
-
-    font-size: 10px;
 
     color: white;
 
@@ -690,6 +873,34 @@ footer p {
     .nav-links {
 
         gap: 15px;
+
+    }
+
+}
+
+@media(max-width:700px) {
+
+    .footer-container {
+
+        flex-direction: column-reverse;
+
+        gap: 35px;
+
+        text-align: center;
+
+    }
+
+
+    .footer-brand {
+
+        text-align: center;
+
+    }
+
+
+    .footer-menu {
+
+        align-items: center;
 
     }
 

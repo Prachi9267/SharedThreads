@@ -10,6 +10,20 @@ window.addEventListener("scroll", () => {
 
 });
 
+
+function toggleText() {
+    let text = document.getElementById("moreText");
+    let btn = document.getElementById("readBtn");
+
+    text.classList.toggle("show");
+
+    if (text.classList.contains("show")) {
+        btn.innerHTML = "Read Less";
+    } else {
+        btn.innerHTML = "Read More";
+    }
+}
+
 const reviewForm = document.getElementById("reviewForm");
 const reviewContainer = document.getElementById("reviewContainer");
 
@@ -70,3 +84,4 @@ sampleReviews.forEach(item => {
     reviewContainer.appendChild(card);
 
 });
+
