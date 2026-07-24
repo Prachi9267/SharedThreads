@@ -273,7 +273,7 @@ header {
 
     gap: 10px;
 
-    background: #ffffff;
+    background: #fff1f5;
 
     flex-wrap: wrap;
 
@@ -375,9 +375,7 @@ header {
 
 .founders {
     padding: 90px 8%;
-    background: linear-gradient(to bottom,
-            #ffffff,
-            #fff1f5);
+    background: #fff1f5;
     text-align: center;
 }
 
@@ -492,7 +490,7 @@ header {
 
     text-align: center;
 
-    background: #ffffff;
+    background: #fff1f5;
 
 }
 
