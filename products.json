@@ -1,0 +1,207 @@
+[
+    {
+        "id": 1,
+        "Name": "White Floral Dress",
+        "Price": 132,
+        "Images": [
+            "images/white floral dress 1.jpeg",
+            "images/white floral dress 2.jpeg"
+        ],
+        "Measurements": {
+            "Length": "32",
+            "Bust": "32 - 33",
+            "Underbust": "28 - 29",
+            "Waist": "28.5",
+            "Hips": "37 - 37.5"
+        },
+        "Remark": "has a small dark spot, will be removed by wash before renting",
+        "Description": "appropriate for s & xs sizes",
+        "ModelHeight": "5'6\""
+    },
+    {
+        "id": 2,
+        "Name": "Yellow Pink Suit",
+        "Price": 300,
+        "Images": [
+            "images/yellow pink suit 1.jpeg",
+            "images/yellow pink suit 2.jpeg"
+        ],
+        "Measurements": {
+            "Length Of Kameez": "38.5",
+            "Bust": "32 - 33",
+            "Underbust": "28",
+            "Waist": "28 - 28.5",
+            "Hips": "37",
+            "Arm Hole": "15",
+            "Shoulder": "16",
+            "Front Neck Depth": "7.5",
+            "Salwar Waist": "31",
+            "Salwar Length": "36",
+            "Thigh": "19 - 20",
+            "Knee": "14"
+        },
+        "Material": "silk blend fabric",
+        "Remark": "has a visible dark patch on the front side of kameez (can be hidden by styling with duppata), (7-8 years old)",
+        "Description": "appropriate for s & xs sizes",
+        "ModelHeight": "5'6\""
+    },
+    {
+        "id": 3,
+        "Name": "Green Suit Salwar",
+        "Price": 220,
+        "Images": [
+            "images/green suit salwar 1.jpeg",
+            "images/green suit salwar 2.jpeg"
+        ],
+        "Measurements": {
+            "Length Of Kameez": "37",
+            "Bust": "32 - 33",
+            "Underbust": "28 - 29",
+            "Waist": "28.5 - 30",
+            "Hips": "37 - 37.5",
+            "Front Neck Depth": "7.5",
+            "Arm Hole": "14",
+            "Shoulder": "16",
+            "Salwar Length": "24.5",
+            "Thigh": "19 - 20.5",
+            "Knee": "14"
+        },
+        "Material": "cotton",
+        "Description": "appropriate for s & xs sizes",
+        "ModelHeight": "5'6\""
+    },
+    {
+        "id": 4,
+        "Name": "Black Mini Dress (stretchable)",
+        "Price": 70,
+        "Images": [
+            "images/black mini dress 1.jpeg",
+            "images/black mini dress 2.jpeg"
+        ],
+        "Measurements": {
+            "Length": "29",
+            "Bust": "32 - 33",
+            "Underbust": "27 - 27.5",
+            "Waist": "28 - 28.5",
+            "Hips": "36 - 37",
+            "Front Neck Depth": "7.5",
+            "Arm Hole": "16",
+            "Sleeve Length": "22",
+            "Shoulders": "16"
+        },
+        "Material": "polyester, lycra",
+        "Description": "appropriate for s & xs sizes",
+        "ModelHeight": "5'6\""
+    },
+    {
+        "id": 5,
+        "Name": "Black Net Top",
+        "Price": 66,
+        "Images": [
+            "images/black net top 1.jpeg",
+            "images/black net top 2.jpeg"
+        ],
+        "Measurements": {
+            "Bust": "32 - 33",
+            "Underbust": "27 - 28.5",
+            "Waist": "28 - 29",
+            "Front Neck Depth": "10",
+            "Sleeve Length": "24",
+            "Shoulder": "15"
+        },
+        "Material": "nylon, polyester, polyamide blend mixed with elastic fibres",
+        "Description": "appropriate for s & xs sizes",
+        "ModelHeight": "5'6\""
+    },
+    {
+        "id": 6,
+        "Name": "Green Lehenga",
+        "Price": 700,
+        "Images": [
+            "images/green lehnga 1.jpeg",
+            "images/green lehnga 2.jpeg"
+        ],
+        "Measurements": {
+            "Bust": "32 - 33",
+            "Underbust": "28 - 29",
+            "Front Neck Depth": "7.5",
+            "Back Neck Depth": "9",
+            "Arm Hole": "16",
+            "Shoulder": "13.5",
+            "Waistline": "33 - 34",
+            "Hips": "38 - 39",
+            "Lehenga Length": "42"
+        },
+        "Material": "(banarasi art silk / brocade fabric)",
+        "Remark": "one of the tassels/latkans has fallen off",
+        "Description": "appropriate for s & xs sizes",
+        "ModelHeight": "5'6\""
+    },
+    {
+        "id": 7,
+        "Name": "Blue Peach Lehenga",
+        "Price": 1500,
+        "Images": [
+            "images/blue peach lehnga 1.jpeg",
+            "images/blue peach lehnga 2.jpeg"
+        ],
+        "Measurements": {
+            "Bust": "32 - 33",
+            "Underbust": "28 - 28.5",
+            "Back Neck Depth": "11.5",
+            "Arm Hole": "16.5",
+            "Shoulder": "13.5",
+            "Waistline": "33 - 33.5",
+            "Hips": "38 - 38.5",
+            "Lehenga Length": "40.5"
+        },
+        "Material": "satin",
+        "Remark": "one of the tassels/latkans has fallen off",
+        "Description": "appropriate for s & xs sizes",
+        "ModelHeight": "5'6\""
+    },
+    {
+        "id": 8,
+        "Name": "Blue Green Mini Dress",
+        "Price": 85,
+        "Images": [
+            "images/blue green mini dress 1.jpeg",
+            "images/blue green mini dress 2.jpeg"
+        ],
+        "Measurements": {
+            "Bust": "31.5 - 32",
+            "Underbust": "28 - 28.5",
+            "Waist": "28 - 29",
+            "Hips": "37 - 38",
+            "Length": "29.5",
+            "Arm Hole": "20",
+            "Sleeve Length": "23",
+            "Shoulder": "14"
+        },
+        "Material": "cotton",
+        "Description": "appropriate for s & xs sizes",
+        "ModelHeight": "5'6\""
+    },
+    {
+        "id": 9,
+        "Name": "Pink Lace Top",
+        "Price": 72,
+        "Images": [
+            "images/pink lace top 1.jpeg",
+            "images/pink lace top 2.jpeg"
+        ],
+        "Measurements": {
+            "Bust": "32 - 33",
+            "Underbust": "28 - 28.5",
+            "Waist": "27 - 28",
+            "Length": "17",
+            "Sleeve Length": "22",
+            "Arm Hole": "17.5",
+            "Shoulder": "14.5",
+            "Front Neck Depth": "12"
+        },
+        "Material": "polyester, spandex, lace",
+        "Description": "appropriate for s & xs sizes",
+        "ModelHeight": "5'6\""
+    }
+]

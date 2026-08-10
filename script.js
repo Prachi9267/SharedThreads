@@ -24,64 +24,34 @@ function toggleText() {
     }
 }
 
-const reviewForm = document.getElementById("reviewForm");
-const reviewContainer = document.getElementById("reviewContainer");
 
-reviewForm.addEventListener("submit", function (e) {
+
+reviewForm.addEventListener("submit", async function (e) {
 
     e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const review = document.getElementById("review").value;
+    try {
 
-    const card = document.createElement("div");
+        const response = await fetch("https://script.google.com/macros/s/AKfycbzZO27nArossT_1SHMppwBe0ZPLUW8qIV4QV07DPxNs6WAuZhqLV-sUcih_juTiw8jreg/exec", {
+            method: "POST",
+            body: JSON.stringify({
+                name: document.getElementById("name").value,
+                review: document.getElementById("review").value
+            })
+        });
 
-    card.classList.add("review-card");
+        console.log(response);
 
-    card.innerHTML = `
-        <div class="stars">★★★★★</div>
-        <h3>${name}</h3>
-        <p>${review}</p>
-    `;
+        const text = await response.text();
+        console.log(text);
 
-    reviewContainer.prepend(card);
+        alert("Thank you for your review!");
 
-    reviewForm.reset();
+        document.getElementById("reviewForm").reset();
 
-});
-
-const sampleReviews = [
-
-    {
-        name: "Priya",
-        review: "Absolutely loved the crochet flowers. Beautiful craftsmanship."
-    },
-
-    {
-        name: "Ananya",
-        review: "The quality exceeded my expectations. Highly recommended."
-    },
-
-    {
-        name: "Neha",
-        review: "Beautiful packaging and amazing handmade products."
+    } catch (err) {
+        console.error(err);
+        alert(err.message);
     }
 
-];
-
-sampleReviews.forEach(item => {
-
-    const card = document.createElement("div");
-
-    card.classList.add("review-card");
-
-    card.innerHTML = `
-        <div class="stars">★★★★★</div>
-        <h3>${item.name}</h3>
-        <p>${item.review}</p>
-    `;
-
-    reviewContainer.appendChild(card);
-
 });
-
