@@ -3,19 +3,16 @@ const params =
         window.location.search
     );
 
-
 const productId =
     Number(
         params.get("id")
     );
-
 
 fetch("products.json")
 
     .then(response => response.json())
 
     .then(products => {
-
 
         // FIND PRODUCT
 
@@ -296,9 +293,73 @@ fetch("products.json")
                 </div>
 
 
+                <!-- =========================
+                     RENT BUTTON
+                ========================== -->
+
+                <button
+                    class="rent-btn"
+                    id="rentBtn"
+                    type="button"
+                >
+                    Rent This Item
+                </button>
+
+
             </div>
 
         `;
+
+
+        // ==================================
+        // RENT BUTTON / WHATSAPP
+        // ==================================
+
+        const rentBtn =
+            document.getElementById(
+                "rentBtn"
+            );
+
+
+        rentBtn.addEventListener(
+            "click",
+            () => {
+
+                // Replace XXXXXX with your
+                // WhatsApp number later.
+                // Include country code.
+                // Example for India:
+                // 919876543210
+
+                const whatsappNumber =
+                    "918143388549";
+
+
+                const productName =
+                    product.Name;
+
+
+                const productLink =
+                    window.location.href;
+
+
+                const message =
+                    `Hi! I want to rent this item: ${productName}
+
+Product link: ${productLink}`;
+
+
+                const whatsappURL =
+                    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+
+                window.open(
+                    whatsappURL,
+                    "_blank"
+                );
+
+            }
+        );
 
 
         // ==================================

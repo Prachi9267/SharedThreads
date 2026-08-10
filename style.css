@@ -1461,3 +1461,40 @@ SMALL PHONES
     }
 
 }
+
+/* ==================================
+   RENT THIS ITEM BUTTON
+================================== */
+
+.rent-btn {
+    width: 100%;
+    margin-top: 35px;
+    padding: 16px 24px;
+
+    background-color: #c58f8f;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+
+.rent-btn:hover {
+    background-color: #b57d7d;
+    transform: translateY(-1px);
+}
+
+
+.rent-btn:active {
+    transform: translateY(0);
+}
