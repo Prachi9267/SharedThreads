@@ -280,7 +280,7 @@ fetch("products.json")
                 <p
                     class="product-detail-price"
                 >
-                    ₹${product.Price}
+                    ₹${product.Price} <span>(1st Day Rent)</span>
                 </p>
 
 
